@@ -21,11 +21,11 @@ Route::get('/productos', function () {
     return view('product');
 });
 
-Route::get('/usuario', function () {
-    return view('product');
+Route::get('/usuarios', function () {
+    return view('usuario');
 });
 
-Route::get('/pedido', function () {
-    return view('product');
+Route::get('/pedidos', function () {
+    return view('pedido');
 });
 

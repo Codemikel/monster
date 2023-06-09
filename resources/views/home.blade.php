@@ -6,7 +6,7 @@
         <header class="h-24 w-full shadow-md bg-white">
             <section class="w-5/6 mx-auto flex items-center justify-between h-24">
                 <div>
-                    <a href="" class="font-serif text-4xl">Drink it Colombia</a>
+                    <a href="/" class="font-serif text-4xl">Drink it Colombia</a>
                 </div>
                 <nav class=" w-1/2">
                     <ul class="flex items-center  justify-around">

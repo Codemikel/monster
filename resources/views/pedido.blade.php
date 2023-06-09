@@ -1,5 +1,5 @@
 @extends('template')
-<?php $pageName = "Productos"; ?>
+<?php $pageName = "Pedido"; ?>
 @section('content')
     <header class="h-24 w-full shadow-md bg-white">
         <section class="w-5/6 mx-auto flex items-center justify-between h-24">
@@ -19,32 +19,33 @@
         </section>
         <section class="mt-8">
             <div class="w-5/6 mx-auto">
-                <h2 class="text-3xl mb-8 font-bold font-serif">Productos</h2>
+                <h2 class="text-3xl mb-8 font-bold font-serif">Pedidos</h2>
+
             </div>
             <section class="w-full">
                 <table class="w-5/6 mx-auto">
                     <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Marca</th>
-                            <th>Descripción</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
-                            <th>Acciones</th>
-                        </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="my-4 text-center">Monster</td>
-                            <td class="my-4 text-center">Monster</td>
-                            <td class="my-4 text-center">Monster</td>
-                            <td class="my-4 text-center">Monster</td>
-                            <td class="my-4 text-center">Monster</td>
-                            <td class="my-4 text-center">
-                                <a href=""><i class="fas fa-edit"></i></a>
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td class="my-4 text-center">Monster</td>
+                        <td class="my-4 text-center">Monster</td>
+                        <td class="my-4 text-center">Monster</td>
+                        <td class="my-4 text-center">Monster</td>
+                        <td class="my-4 text-center">Monster</td>
+                        <td class="my-4 text-center">
+                            <a href=""><i class="fas fa-edit"></i></a>
+                            <a href=""><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </section>

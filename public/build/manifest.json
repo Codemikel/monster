@@ -1,0 +1,16 @@
+{
+  "resources/assets/hero.png": {
+    "file": "assets/hero-7197bbb1.png",
+    "src": "resources/assets/hero.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-ae69c7bf.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-6870bb4e.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

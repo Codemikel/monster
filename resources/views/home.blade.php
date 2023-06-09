@@ -38,14 +38,16 @@
                 <h2 class="text-3xl mb-8 font-bold font-serif">Últimos lanzamientos</h2>
             </div>
             <section class="w-5/6 mx-auto flex flex-wrap items-center justify-between gap-8">
-                @for ($i = 0; $i < 10; $i++)
+                @forelse ($products as $product)
                     <article class="w-2/12 bg-white shadow-md rounded-xl flex flex-col p-4 gap-4">
-                        <img src="{{ Vite::asset('resources/assets/monster.png') }}" alt="Monster">
+                        <img src="{{ $product->image_path }}" alt="Monster">
                         <h3 class="font-bold">Monster Ultra Paradise</h3>
                         <p>Monster Ultra Paradise es una bebida energética con un sabor tropical y cítrico.</p>
                         <button class="h-12 px-8 bg-monster-green rounded text-white">Comprar</button>
                     </article>
-                @endfor
+                @empty
+
+                @endforelse
             </section>
         </section>
         <section id="redbull"  class="my-16 w-full">

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -11,6 +12,10 @@ Route::get('/', function () {
 
 Route::controller(ProductController::class)->group(function () {     
     Route::get('/',        'index')->name('index'); 
+});
+
+Route::controller(OrderController::class)->group(function () {     
+    Route::get('/list',        'list')->name('list'); 
 });
 
 Route::get('/dashboard', function () {
@@ -24,5 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('products', ProductController::class)->except('show');
+
+Route::resource('orders', OrderController::class)->except('show');
 
 require __DIR__.'/auth.php';

@@ -41,8 +41,8 @@
                 @forelse ($products as $product)
                     <article class="w-2/12 bg-white shadow-md rounded-xl flex flex-col p-4 gap-4">
                         <img src="{{ $product->image_path }}" alt="Monster">
-                        <h3 class="font-bold">Monster Ultra Paradise</h3>
-                        <p>Monster Ultra Paradise es una bebida energética con un sabor tropical y cítrico.</p>
+                        <h3 class="font-bold">{{ $product->name }}</h3>
+                        <p>{{ substr($product->description, 0, 80) }}</p>
                         <button class="h-12 px-8 bg-monster-green rounded text-white">Comprar</button>
                     </article>
                 @empty
